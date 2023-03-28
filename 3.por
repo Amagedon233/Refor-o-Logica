@@ -1,26 +1,20 @@
-// O valor unitário de um livro na promoção custa R$ 12,00, caso o cliente comprar até dez livros.
-// Caso contrário, o preço unitário do livro custa R$ 8,00. Escreva um algoritmo que leia
-// o número de livros comprados calcule e mostre o valor total que o cliente deverá pagar.
+// 3. Crie um algoritmo que leia um determinado número e apresente na tela a tabuada da divisão deste
+// número. Por exemplo, digamos que o número informado foi 5, o programa deverá apresentar na tela:
+// 5 : 5 = 1
+// 10 : 5 = 2
+// 15 : 5 = 3
+// …
+// 50 : 5 = 10
 
 programa {
-  funcao inicio() {
-    
-    real precoLivro, valorTotal
-    inteiro unidadeLivro
-    
-    escreva("Quantos livros você deseja comprar?\n")
-    leia(unidadeLivro)
-    
-    se(unidadeLivro <= 10) {
-        precoLivro = 12.00
-        valorTotal = precoLivro * unidadeLivro
+	funcao inicio() {
+		inteiro numero
+	    leia(numero)
         
-    } senao {
-        precoLivro = 8.00
-        valorTotal = precoLivro * unidadeLivro
+        para(inteiro i = 1; i <= 10; i++) {
+
+        escreva(numero*i + " : " + numero + " = " + i + "\n")
         
-    } 
-    
-    escreva("Será " + unidadeLivro + " livros por R$" + valorTotal)
-  }
+        }	
+	}
 }

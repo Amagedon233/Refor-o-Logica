@@ -1,20 +1,16 @@
-// Escreva um algoritmo que leia a quantidade de 
-// combustível abastecido em um automóvel em litros
-// distância que o automóvel percorre por litro abastecido. 
-// calcular e mostrar a distância máxima que o automóvel poderá atingir
-
+// 2. Elabore um algoritmo que leia um determinado número e apresente na tela a tabuada de
+// multiplicação deste número. Por exemplo, digamos que o número informado foi 2, o programa
+// deverá apresentar na tela:
+// 1 x 2 = 2
+// 2 x 2 = 4
+// 3 x 2 = 6
 
 programa {
 	funcao inicio() {
-	    real combustivel, distanciaKmMaxima, km_l
-	    
-	    combustivel = 20.1
-	    km_l = 8.5
-	    
-	    distanciaKmMaxima = combustivel / km_l
-	    escreva(distanciaKmMaxima)
+	    inteiro numero
+	    leia(numero)
+        para(inteiro i = 1; i <= 10; i++) {
+            escreva(i + " x " + numero + " = " + i*numero + "\n")
+        }		
 	}
 }
-
-
-
