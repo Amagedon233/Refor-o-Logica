@@ -1,32 +1,17 @@
-// Escreva um algoritmo que leia um valor para a variável A e um valor para a variável B. 
-// Logo após, o algoritmo deverá fazer com que a variável A guarde o valor da variável B e a variável B
-// guarde o valor da variável A. Apresentar os valores das variáveis A e B antes e depois da troca.
+// 4. Escrever um algoritmo que lê um valor numérico inteiro. Após, escreva uma tabela com
+// cabeçalho, contendo o valor, seu quadrado e seu cubo. Mostrar para todos valores entre o valor
+// informado e 1. Por exemplo, digamos que o número informado seja 20, deve-se apresentar na tela:
+// Número Dobro Triplo
+// 20 400 8000
+// 19 361 6859
+// 18 324 5832
 
 programa {
-    funcao pularLinha() {
-        escreva("\n")
-    }
-    
 	funcao inicio() {
-		inteiro a, b, c
-		
-		escreva("Digite o valor de A")
-		pularLinha()
-		leia(a)
-		
-		escreva("Digite o valor de B")
-		pularLinha()
-		leia(b)
-		
-		escreva("A = " + a + " | " + "B = " + b)
-		pularLinha()
-		pularLinha()
-		
-		c = a
-		a = b
-		b = c 
-		
-		escreva("A = " + a + " | " + "B = " + b)
-		
+        inteiro numero = 20 + 1
+		para(inteiro i = numero; i > 0; i--) {
+		    numero--
+		    escreva(numero + " | " + numero*numero + " | " + numero*numero*numero + "\n")
+		}
 	}
 }
